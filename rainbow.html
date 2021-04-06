@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rainbow</title>
+    <style>
+        .rainbow >div{
+            height: 600px;
+            width: 600px;
+            background-color: hsl(0,75%,50%);
+            border-radius: 50%;/* 使用 border-radius: 50%;这个语法可以得到一个圆形. */
+        }
+
+        .rainbow >div>div{
+            height: 580px;
+            margin:10px;
+            background-color: hsl(30,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div{
+            height: 560px;
+            margin:10px;
+            background-color: hsl(60,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div>div{
+            height: 540px;
+            margin:10px;
+            background-color: hsl(120,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div>div>div{
+            height: 520px;
+            margin:10px;
+            background-color: hsl(180,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div>div>div>div{  
+            height: 500px;
+            margin:10px;
+            background-color: hsl(240,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div>div>div>div>div{ 
+            height: 480px;
+            margin:10px;
+            background-color: hsl(300,75%,50%);
+            border-radius: 50%;
+        }
+
+        .rainbow >div>div>div>div>div>div>div>div{
+            height: 460px;
+            margin:10px;
+            background-color:white;
+            border-radius: 50%;
+        }
+
+        body{
+            background-color:white;
+        }
+
+        .rainbow{
+            height: 300px;
+            overflow: hidden;/* 作用是使圆形超出的半圆部分隐藏起来,则只剩下显示半圆. */   
+        }
+
+        .rainbow div{
+            overflow:hidden;/* 作用是使父元素和子元素的margin不合并; 这里的.rainbow div是父元素 */  
+        }    
+    </style>
+</head>
+<body>
+    <div class="rainbow">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
